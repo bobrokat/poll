@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1"
+         metadata-complete="true">
+
+    <display-name>Poll</display-name>
+    
+    <servlet>
+        <servlet-name>polls</servlet-name>
+        <servlet-class>com.fujitsu.fs.javalab.poll.webapp.controller.PollsController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>polls</servlet-name>
+        <url-pattern>/polls</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>poll</servlet-name>
+        <servlet-class>com.fujitsu.fs.javalab.poll.webapp.controller.PollController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>poll</servlet-name>
+        <url-pattern>/poll</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>pollresult</servlet-name>
+        <servlet-class>com.fujitsu.fs.javalab.poll.webapp.controller.PollResultController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>pollresult</servlet-name>
+        <url-pattern>/pollresult</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>form</servlet-name>
+        <servlet-class>com.fujitsu.fs.javalab.poll.webapp.controller.FileUploadController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>form</servlet-name>
+        <url-pattern>/form</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>files</servlet-name>
+        <servlet-class>com.fujitsu.fs.javalab.poll.webapp.controller.FilesListController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>files</servlet-name>
+        <url-pattern>/files</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>files</welcome-file>
+    </welcome-file-list>
+
+
+</web-app>
