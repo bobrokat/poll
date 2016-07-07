@@ -8,4 +8,5 @@ INSERT INTO POLL_CHOICE (ID, CHOICE_TEXT, VOTES, POLL_ID) VALUES
   (3, 'На 3', 0, 1),
   (4, 'На 4', 0, 1),
   (5, 'ИТИС', 0, 2),
-  (6, 'ВМК',  0, 2);
+  (6, 'ПсихФак', 0, 2),
+  (7, 'ВМК',  0, 2);
